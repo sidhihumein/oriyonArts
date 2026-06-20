@@ -1,0 +1,3003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oriyon Art Creations | Creative Event Experiences in Indore</title>
+<meta name="description" content="Oriyon Art Creations by Anushka Sendre creates interactive art experiences for birthdays, weddings, corporate events, community celebrations, live art counters, and personalized keepsakes in Indore and beyond.">
+<meta name="keywords" content="Oriyon Art Creations, Anushka Sendre, creative event experiences Indore, birthday party activities Indore, wedding guest engagement, live art counter, corporate engagement activities, DIY birthday activities, personalized keepsakes, art workshops Indore">
+<meta property="og:title" content="Oriyon Art Creations | Creative Event Experiences in Indore">
+<meta property="og:description" content="Creative experiences for birthdays, weddings, corporate events, and every celebration in between.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+/* ===== DESIGN TOKENS ===== */
+:root {
+  /* Brand palette — derived from Oriyon logo: marble white, deep navy, feather sky-blue */
+  --ink:          #0D1F45;
+  --ink-soft:     #1E3A6E;
+  --ink-muted:    #5B7BAD;
+  --canvas:       #F4F7FB;
+  --canvas-warm:  #ECF1F9;
+  --canvas-card:  #FAFCFF;
+  --navy:         #1B3F7E;
+  --navy-light:   #2E5FA3;
+  --navy-pale:    #D5E2F5;
+  --sky:          #4E9EC7;
+  --sky-light:    #7DC4E0;
+  --sky-pale:     #D2EDF8;
+  --marble:       #F0F4FA;
+  /* Aliases for old variable names used across the markup */
+  --gold:         #1B3F7E;
+  --gold-light:   #4A74BE;
+  --gold-pale:    #D5E2F5;
+  --blush:        #A8C4E8;
+  --blush-pale:   #EAF1FA;
+  --sage:         #4E9EC7;
+  --sage-pale:    #D2EDF8;
+  /* Radii */
+  --r-sm:   8px;
+  --r-md:  14px;
+  --r-lg:  22px;
+  --r-xl:  32px;
+  --r-pill: 999px;
+  /* Keep old names for compatibility */
+  --radius-sm:   8px;
+  --radius-md:  14px;
+  --radius-lg:  22px;
+  --radius-pill: 999px;
+  /* Typography */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+  /* Shadows */
+  --shadow-soft: 0 2px 24px rgba(13,31,69,0.08);
+  --shadow-card: 0 6px 40px rgba(13,31,69,0.13);
+  --shadow-lift: 0 12px 56px rgba(13,31,69,0.18);
+  /* WhatsApp */
+  --wa-green: #25D366;
+  --wa-dark:  #128C7E;
+}
+
+/* ===== RESET ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--canvas);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* ===== TYPOGRAPHY ===== */
+.display-xl {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 9vw, 5.5rem);
+  font-weight: 400;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+}
+.display-lg {
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 5.5vw, 3.6rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+}
+.display-md {
+  font-family: var(--font-display);
+  font-size: clamp(1.55rem, 3.5vw, 2.35rem);
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+}
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--sky);
+}
+.body-lg { font-size: 1.05rem; line-height: 1.78; color: var(--ink-soft); }
+.body-sm { font-size: 0.875rem; color: var(--ink-muted); }
+
+/* ===== LAYOUT ===== */
+.container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 88px 0; }
+.section-sm { padding: 52px 0; }
+
+/* ===== PAPER TEXTURE OVERLAY ===== */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  opacity: 0.6;
+}
+body > * { position: relative; z-index: 1; }
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: var(--r-pill);
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: all 0.22s ease;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+.btn-wa {
+  background: var(--wa-green);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.30);
+}
+.btn-wa:hover { background: var(--wa-dark); box-shadow: 0 6px 28px rgba(37,211,102,0.40); transform: translateY(-1px); }
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid rgba(13,31,69,0.22);
+}
+.btn-outline:hover { border-color: var(--navy); color: var(--navy); background: rgba(27,63,126,0.04); }
+.btn-gold {
+  background: var(--navy);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(27,63,126,0.28);
+}
+.btn-gold:hover { background: var(--navy-light); transform: translateY(-1px); box-shadow: 0 6px 28px rgba(27,63,126,0.35); }
+.btn-ghost {
+  background: rgba(27,63,126,0.07);
+  color: var(--navy);
+  border: 1px solid rgba(27,63,126,0.18);
+}
+.btn-ghost:hover { background: rgba(27,63,126,0.13); border-color: var(--navy); }
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 0 24px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(244,247,251,0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(13,31,69,0.07);
+  transition: all 0.3s;
+}
+.navbar.scrolled {
+  box-shadow: var(--shadow-soft);
+  background: rgba(244,247,251,0.97);
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.nav-logo span { color: var(--sky); }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 0.86rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+  transition: color 0.2s;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 0; right: 0;
+  height: 1.5px;
+  background: var(--sky);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease;
+}
+.nav-links a:hover { color: var(--navy); }
+.nav-links a:hover::after { transform: scaleX(1); }
+.nav-cta { display: flex; align-items: center; gap: 12px; }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 68px; left: 0; right: 0;
+  background: var(--canvas-card);
+  border-bottom: 1px solid rgba(13,31,69,0.1);
+  padding: 20px 24px 28px;
+  z-index: 999;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 12px 40px rgba(13,31,69,0.12);
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(13,31,69,0.06);
+  transition: color 0.2s;
+}
+.mobile-menu a:hover { color: var(--navy); }
+.mobile-menu a:last-of-type { border-bottom: none; }
+.mobile-menu .btn { margin-top: 14px; width: 100%; justify-content: center; }
+
+/* ===== STICKY WHATSAPP ===== */
+.sticky-wa {
+  position: fixed;
+  bottom: 24px;
+  right: 20px;
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--wa-green);
+  color: #fff;
+  padding: 13px 20px;
+  border-radius: var(--r-pill);
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: 0 8px 32px rgba(37,211,102,0.38);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .sticky-wa {
+    animation: wa-pulse 3s ease-in-out infinite;
+  }
+  @keyframes wa-pulse {
+    0%, 100% { box-shadow: 0 8px 32px rgba(37,211,102,0.38); }
+    50% { box-shadow: 0 8px 40px rgba(37,211,102,0.56), 0 0 0 6px rgba(37,211,102,0.12); }
+  }
+}
+.sticky-wa:hover { background: var(--wa-dark); transform: translateY(-2px) scale(1.02); box-shadow: 0 12px 44px rgba(37,211,102,0.46); animation: none; }
+.sticky-wa svg { width: 20px; height: 20px; flex-shrink: 0; }
+.sticky-wa-label { display: none; }
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100svh;
+  padding: 100px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  background: var(--canvas);
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+/* Marble texture suggestion via layered gradients */
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 600px 500px at 85% -10%, rgba(78,158,199,0.12) 0%, transparent 65%),
+    radial-gradient(ellipse 400px 400px at -10% 80%, rgba(27,63,126,0.07) 0%, transparent 65%),
+    radial-gradient(ellipse 300px 280px at 50% 110%, rgba(78,158,199,0.08) 0%, transparent 65%);
+}
+/* Subtle brush-stroke SVG shapes */
+.hero-brush {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.07;
+}
+.hero-brush-1 { top: -60px; right: -80px; width: 480px; }
+.hero-brush-2 { bottom: 40px; left: -60px; width: 320px; transform: rotate(180deg); }
+.hero-content { position: relative; z-index: 1; max-width: 860px; width: 100%; }
+.hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(27,63,126,0.07);
+  border: 1px solid rgba(27,63,126,0.16);
+  color: var(--navy);
+  font-size: 0.74rem;
+  font-weight: 500;
+  padding: 5px 14px;
+  border-radius: var(--r-pill);
+  letter-spacing: 0.03em;
+  transition: all 0.2s;
+}
+.chip:hover { background: rgba(27,63,126,0.13); border-color: var(--navy); }
+.hero-headline { margin-bottom: 20px; }
+.hero-headline em {
+  font-style: italic;
+  color: var(--sky);
+  position: relative;
+}
+/* Underline brush effect on em */
+.hero-headline em::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--sky), var(--sky-light));
+  border-radius: 3px;
+  opacity: 0.6;
+}
+.hero-sub {
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
+  color: var(--ink-soft);
+  max-width: 560px;
+  margin-bottom: 14px;
+  line-height: 1.75;
+}
+.hero-emotional {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--navy);
+  opacity: 0.8;
+  max-width: 520px;
+  margin-bottom: 36px;
+  line-height: 1.6;
+  padding-left: 16px;
+  border-left: 3px solid var(--sky-light);
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 52px;
+}
+.hero-tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+}
+
+/* Hero visual collage */
+.hero-collage {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+.hero-collage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+.hero-cell {
+  border-radius: var(--r-md);
+  overflow: hidden;
+  position: relative;
+}
+.hero-cell-label {
+  position: absolute;
+  bottom: 8px; left: 8px;
+  background: rgba(13,31,69,0.75);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: var(--r-pill);
+  letter-spacing: 0.05em;
+  backdrop-filter: blur(4px);
+}
+.hero-cell-main { grid-column: span 2; height: 260px; }
+.hero-cell-sub { height: 150px; }
+
+/* ===== PHOTO PLACEHOLDER ===== */
+.photo-placeholder {
+  background: var(--canvas-warm);
+  border: 1.5px dashed rgba(27,63,126,0.18);
+  border-radius: var(--r-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--ink-muted);
+  font-size: 0.78rem;
+  text-align: center;
+  padding: 24px 20px;
+  height: 100%;
+  line-height: 1.5;
+}
+.photo-placeholder svg {
+  width: 28px; height: 28px;
+  opacity: 0.35;
+  color: var(--navy);
+}
+.photo-placeholder strong {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sky);
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+/* ===== GUEST ENGAGEMENT EQUATION ===== */
+.equation-section {
+  background: var(--ink);
+  color: var(--canvas);
+  padding: 88px 0;
+  position: relative;
+  overflow: hidden;
+}
+.equation-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 800px 500px at 50% 0%, rgba(78,158,199,0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+.equation-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 400;
+  color: var(--canvas);
+  margin-bottom: 12px;
+}
+.equation-sub {
+  color: rgba(244,247,251,0.65);
+  font-size: 1rem;
+  margin-bottom: 56px;
+}
+.equation-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.eq-step {
+  display: flex;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  align-items: flex-start;
+  position: relative;
+}
+.eq-step:last-child { border-bottom: none; }
+.eq-num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 300;
+  color: rgba(78,158,199,0.25);
+  line-height: 1;
+  min-width: 52px;
+  flex-shrink: 0;
+}
+.eq-verb {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--sky-light);
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+.eq-desc {
+  font-size: 0.9rem;
+  color: rgba(244,247,251,0.65);
+  line-height: 1.7;
+}
+.eq-arrow {
+  display: none;
+  color: var(--sky);
+  font-size: 1.5rem;
+  align-self: center;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+/* ===== EXPERIENCE FINDER ===== */
+.finder-section {
+  background: var(--canvas-warm);
+  padding: 80px 0;
+}
+.finder-header { text-align: center; margin-bottom: 44px; }
+.finder-header p { margin-top: 12px; }
+.finder-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 44px;
+}
+.finder-tab {
+  padding: 11px 22px;
+  border-radius: var(--r-pill);
+  border: 1.5px solid rgba(13,31,69,0.14);
+  background: var(--canvas-card);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  transition: all 0.22s;
+  cursor: pointer;
+}
+.finder-tab.active {
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+  box-shadow: 0 4px 18px rgba(27,63,126,0.28);
+}
+.finder-tab:hover:not(.active) { border-color: var(--navy); color: var(--navy); background: rgba(27,63,126,0.04); }
+.finder-panel { display: none; }
+.finder-panel.active { display: grid; gap: 20px; grid-template-columns: 1fr; }
+.finder-card {
+  background: var(--canvas-card);
+  border-radius: var(--r-lg);
+  padding: 28px 30px;
+  border: 1px solid rgba(13,31,69,0.07);
+  box-shadow: var(--shadow-soft);
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+.finder-card:hover {
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+.finder-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+.finder-activities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 14px 0;
+}
+.activity-tag {
+  background: var(--sky-pale);
+  color: var(--sky);
+  font-size: 0.74rem;
+  padding: 4px 12px;
+  border-radius: var(--r-pill);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: background 0.2s;
+}
+.activity-tag:hover { background: rgba(78,158,199,0.2); }
+.finder-outcome {
+  background: var(--navy-pale);
+  border-radius: var(--r-sm);
+  padding: 12px 16px;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+  border-left: 3px solid var(--navy-light);
+  line-height: 1.6;
+}
+
+/* ===== SERVICE CARDS ===== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 22px;
+}
+.service-card {
+  background: var(--canvas-card);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid rgba(13,31,69,0.07);
+  box-shadow: var(--shadow-soft);
+  transition: all 0.28s ease;
+  display: flex;
+  flex-direction: column;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card);
+  border-color: rgba(27,63,126,0.15);
+}
+.service-card-img {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.service-card-body {
+  padding: 22px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.service-best-for {
+  font-size: 0.72rem;
+  color: var(--sky);
+  margin-bottom: 8px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.service-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.service-card p { font-size: 0.88rem; color: var(--ink-soft); flex: 1; margin-bottom: 18px; line-height: 1.7; }
+.service-card-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* ===== WHY ORIYON ===== */
+.why-section { background: var(--ink); color: var(--canvas); padding: 88px 0; position: relative; overflow: hidden; }
+.why-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 700px 400px at 100% 100%, rgba(78,158,199,0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+.why-grid { display: grid; gap: 28px; grid-template-columns: 1fr; }
+.why-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  background: rgba(255,255,255,0.04);
+  border-radius: var(--r-md);
+  padding: 22px;
+  border: 1px solid rgba(255,255,255,0.07);
+  transition: background 0.25s;
+}
+.why-item:hover { background: rgba(255,255,255,0.07); }
+.why-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(78,158,199,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.why-icon svg { width: 20px; height: 20px; color: var(--sky-light); }
+.why-item h4 {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 500;
+  color: var(--canvas);
+  margin-bottom: 5px;
+}
+.why-item p { font-size: 0.875rem; color: rgba(244,247,251,0.65); line-height: 1.7; }
+.why-quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 3.5vw, 2rem);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--sky-light);
+  line-height: 1.4;
+  margin-bottom: 44px;
+  border-left: 3px solid var(--sky);
+  padding-left: 24px;
+}
+
+/* ===== FEATURED EXPERIENCES ===== */
+.featured-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 1fr;
+}
+.featured-card {
+  background: var(--canvas-card);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid rgba(13,31,69,0.07);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.28s;
+}
+.featured-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card); }
+.featured-card-img { height: 240px; position: relative; overflow: hidden; }
+.featured-card-body { padding: 26px; }
+.featured-tag {
+  display: inline-block;
+  background: var(--navy-pale);
+  color: var(--navy);
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: var(--r-pill);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.featured-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.featured-card p { font-size: 0.875rem; color: var(--ink-soft); line-height: 1.7; }
+
+/* ===== BRANDS ===== */
+.brands-section { background: var(--canvas-warm); padding: 60px 0; }
+.brands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+.brand-badge {
+  background: var(--canvas-card);
+  border: 1px solid rgba(13,31,69,0.1);
+  border-radius: var(--r-md);
+  padding: 14px 24px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.22s;
+}
+.brand-badge:hover { border-color: var(--navy); color: var(--navy); transform: translateY(-2px); box-shadow: var(--shadow-card); }
+
+/* ===== GALLERY / MEMORY WALL ===== */
+.memory-wall-section { padding: 88px 0; }
+.gallery-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+  -webkit-overflow-scrolling: touch;
+}
+.gallery-filter {
+  padding: 8px 18px;
+  border-radius: var(--r-pill);
+  border: 1.5px solid rgba(13,31,69,0.14);
+  background: transparent;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.gallery-filter.active {
+  background: var(--ink);
+  color: var(--canvas);
+  border-color: var(--ink);
+}
+.gallery-filter:hover:not(.active) { border-color: var(--navy); color: var(--navy); }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.gallery-item {
+  border-radius: var(--r-md);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  aspect-ratio: 1;
+  transition: transform 0.25s;
+}
+.gallery-item:hover { transform: scale(1.02); }
+.gallery-item:nth-child(3n+1) { grid-column: span 2; aspect-ratio: 16/9; }
+.gallery-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(13,31,69,0.82));
+  color: #fff;
+  padding: 28px 16px 16px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.25s;
+  line-height: 1.4;
+}
+.gallery-item:hover .gallery-caption { opacity: 1; }
+.gallery-event-tag {
+  position: absolute;
+  top: 10px; left: 10px;
+  background: rgba(13,31,69,0.7);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: var(--r-pill);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(13,31,69,0.92);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  backdrop-filter: blur(8px);
+}
+.lightbox.open { display: flex; }
+.lightbox-inner {
+  max-width: 800px;
+  width: 100%;
+  background: var(--canvas-card);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-lift);
+}
+.lightbox-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: var(--canvas-warm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox-caption {
+  padding: 20px 24px;
+}
+.lightbox-caption h4 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+.lightbox-caption p { font-size: 0.875rem; color: var(--ink-soft); }
+.lightbox-close {
+  position: absolute;
+  top: 14px; right: 14px;
+  width: 36px; height: 36px;
+  background: rgba(13,31,69,0.7);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: background 0.2s;
+  border: none;
+}
+.lightbox-close:hover { background: rgba(13,31,69,0.9); }
+
+/* ===== TESTIMONIALS ===== */
+.testimonials-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+.testimonial-card {
+  background: var(--canvas-card);
+  border-radius: var(--r-lg);
+  padding: 30px;
+  border: 1px solid rgba(13,31,69,0.07);
+  box-shadow: var(--shadow-soft);
+  transition: box-shadow 0.25s;
+}
+.testimonial-card:hover { box-shadow: var(--shadow-card); }
+.testimonial-stars { color: var(--sky); font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
+.testimonial-text {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+.testimonial-author { display: flex; align-items: center; gap: 12px; }
+.testimonial-avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--navy-pale);
+  border: 2px solid var(--navy-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--navy);
+}
+.testimonial-name { font-weight: 500; font-size: 0.9rem; }
+.testimonial-role { font-size: 0.8rem; color: var(--ink-muted); }
+
+/* ===== FOUNDER ===== */
+.founder-section { background: var(--canvas-warm); }
+.founder-content {
+  display: grid;
+  gap: 44px;
+  align-items: center;
+}
+.founder-img-wrap {
+  position: relative;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.founder-img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-card);
+}
+.founder-badge {
+  position: absolute;
+  bottom: -16px;
+  right: -10px;
+  background: var(--canvas-card);
+  border: 1px solid rgba(13,31,69,0.1);
+  border-radius: var(--r-md);
+  padding: 14px 20px;
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+.founder-badge-year {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1;
+}
+.founder-badge-label { font-size: 0.7rem; color: var(--ink-muted); margin-top: 2px; }
+.founder-text h2 { margin-bottom: 16px; }
+.founder-text p { margin-bottom: 16px; line-height: 1.75; }
+.founder-tagline {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--navy);
+  margin: 24px 0;
+  line-height: 1.35;
+}
+.founder-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.value-tag {
+  background: var(--sky-pale);
+  color: var(--sky);
+  font-size: 0.8rem;
+  padding: 5px 14px;
+  border-radius: var(--r-pill);
+  font-weight: 500;
+}
+
+/* ===== FOUNDER TIMELINE ===== */
+.founder-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 24px 0 28px;
+  border-left: 2px solid var(--navy-pale);
+  padding-left: 20px;
+}
+.timeline-event {
+  position: relative;
+  padding: 0 0 20px;
+}
+.timeline-event:last-child { padding-bottom: 0; }
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--navy);
+  border: 2px solid var(--canvas-warm);
+  box-shadow: 0 0 0 2px var(--navy-light);
+}
+.timeline-year {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sky);
+  margin-bottom: 2px;
+}
+.timeline-label {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+/* ===== INSTAGRAM ===== */
+.instagram-section { padding: 80px 0; background: var(--canvas-warm); }
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.insta-item {
+  aspect-ratio: 1;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  position: relative;
+  background: var(--canvas-warm);
+  transition: transform 0.25s;
+}
+.insta-item:hover { transform: scale(1.02); }
+.insta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(13,31,69,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.22s;
+}
+.insta-overlay svg { width: 28px; height: 28px; color: #fff; }
+.insta-item:hover .insta-overlay { opacity: 1; }
+.insta-reel-label {
+  position: absolute;
+  bottom: 8px; left: 8px;
+  background: rgba(13,31,69,0.7);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: var(--r-pill);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+/* ===== FAQ ===== */
+.faq-list { display: flex; flex-direction: column; gap: 0; }
+.faq-item {
+  border-bottom: 1px solid rgba(13,31,69,0.09);
+  overflow: hidden;
+}
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink);
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 16px;
+  transition: color 0.2s;
+}
+.faq-question:hover { color: var(--navy); }
+.faq-icon {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: rgba(27,63,126,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--navy);
+  font-size: 1.1rem;
+  transition: all 0.25s;
+}
+.faq-item.open .faq-icon { transform: rotate(45deg); background: var(--navy); color: #fff; }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.25s;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.78;
+}
+.faq-item.open .faq-answer { max-height: 300px; padding-bottom: 18px; }
+
+/* ===== CONTACT ===== */
+.contact-section { background: var(--ink); color: var(--canvas); padding: 88px 0; }
+.contact-inner {
+  display: grid;
+  gap: 48px;
+}
+.contact-text h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: var(--canvas);
+}
+.contact-text p { color: rgba(244,247,251,0.80); margin-bottom: 28px; }
+.contact-form-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--r-lg);
+  padding: 32px;
+}
+.form-grid { display: grid; gap: 16px; }
+.form-group label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: rgba(244,247,251,0.80);
+  margin-bottom: 6px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.form-control {
+  width: 100%;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--r-sm);
+  padding: 12px 16px;
+  color: var(--canvas);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  transition: border-color 0.2s, background 0.2s;
+  outline: none;
+}
+.form-control::placeholder { color: rgba(244,247,251,0.50); }
+.form-control:focus { border-color: var(--sky); background: rgba(255,255,255,0.1); }
+.form-control option { background: #0F2044; }
+textarea.form-control { resize: vertical; min-height: 100px; }
+
+/* ===== FOOTER ===== */
+footer {
+  background: #0A1929;
+  color: rgba(244,247,251,0.75);
+  padding: 52px 24px 32px;
+}
+.footer-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  gap: 36px;
+}
+.footer-brand .nav-logo { color: var(--canvas); }
+.footer-brand p { font-size: 0.85rem; margin-top: 10px; color: rgba(244,247,251,0.55); max-width: 290px; line-height: 1.7; }
+.footer-links h5 {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sky-light);
+  margin-bottom: 14px;
+}
+.footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-links a { font-size: 0.85rem; color: rgba(244,247,251,0.70); transition: color 0.2s; }
+.footer-links a:hover { color: var(--canvas); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.07);
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: rgba(244,247,251,0.40);
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+  padding: 120px 24px 64px;
+  background: var(--canvas-warm);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.page-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 600px 300px at 50% 0%, rgba(27,63,126,0.08) 0%, transparent 65%);
+  pointer-events: none;
+}
+.page-header h1 { margin-bottom: 14px; position: relative; }
+.page-header p { max-width: 560px; margin: 0 auto; position: relative; }
+
+/* ===== PROCESS STEPS ===== */
+.process-steps { display: flex; flex-direction: column; gap: 0; }
+.process-step {
+  display: flex;
+  gap: 20px;
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(13,31,69,0.07);
+  align-items: flex-start;
+}
+.process-step:last-child { border-bottom: none; }
+.process-num {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  background: var(--navy-pale);
+  border: 1.5px solid var(--navy-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.process-step h4 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.process-step p { font-size: 0.875rem; color: var(--ink-soft); line-height: 1.68; }
+
+/* ===== SECTION HEADER ===== */
+.section-header { margin-bottom: 44px; }
+.section-header.centered { text-align: center; }
+.section-header.centered p { max-width: 520px; margin: 12px auto 0; }
+.section-header p { margin-top: 12px; }
+
+/* ===== DIVIDER (brush-stroke look) ===== */
+.divider {
+  width: 44px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--sky), var(--navy-light));
+  border-radius: 3px;
+  margin: 14px 0 0;
+}
+.section-header.centered .divider { margin: 14px auto 0; }
+
+/* ===== CTA STRIP ===== */
+.cta-strip {
+  background: linear-gradient(135deg, var(--navy-pale), var(--sky-pale));
+  border-radius: var(--r-lg);
+  padding: 36px 30px;
+  text-align: center;
+  margin: 52px 0;
+  border: 1px solid rgba(27,63,126,0.12);
+}
+.cta-strip h3 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+.cta-strip p { font-size: 0.9rem; color: var(--ink-soft); margin-bottom: 22px; }
+.cta-strip .btn { margin: 0 auto; }
+
+/* ===== ANIMATION ===== */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.22s; }
+  .reveal-delay-3 { transition-delay: 0.34s; }
+
+  /* Floating blobs in hero */
+  @keyframes float-blob {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-18px) scale(1.04); }
+  }
+  .hero-blob { animation: float-blob 8s ease-in-out infinite; }
+  .hero-blob-2 { animation-delay: -3s; animation-duration: 11s; }
+  .hero-blob-3 { animation-delay: -6s; animation-duration: 9s; }
+}
+
+/* Blobs */
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.25;
+}
+.hero-blob-1 { width: 500px; height: 400px; background: radial-gradient(circle, var(--sky-pale), transparent); top: -100px; right: -120px; }
+.hero-blob-2 { width: 350px; height: 350px; background: radial-gradient(circle, var(--navy-pale), transparent); bottom: 40px; left: -100px; }
+.hero-blob-3 { width: 280px; height: 280px; background: radial-gradient(circle, var(--sky-pale), transparent); top: 35%; right: 10%; }
+
+/* ===== RESPONSIVE: TABLET ===== */
+@media (min-width: 640px) {
+  .finder-panel.active { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .featured-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .insta-grid { grid-template-columns: repeat(4, 1fr); }
+  .footer-inner { grid-template-columns: 1fr 1fr 1fr; }
+  .form-grid { grid-template-columns: 1fr 1fr; }
+  .sticky-wa-label { display: inline; }
+  .eq-step { align-items: center; }
+}
+
+/* ===== RESPONSIVE: DESKTOP ===== */
+@media (min-width: 900px) {
+  .navbar { padding: 0 48px; }
+  .hamburger { display: none; }
+  .nav-desktop { display: flex; }
+  .section { padding: 108px 0; }
+  .hero { padding: 150px 48px 100px; flex-direction: row; align-items: center; gap: 64px; }
+  .hero-content { flex: 1; }
+  .hero-collage { display: block; flex: 1; }
+  .hero-collage-grid { display: grid; }
+  .finder-panel.active { grid-template-columns: repeat(3, 1fr); }
+  .services-grid { grid-template-columns: repeat(3, 1fr); }
+  .why-grid { grid-template-columns: repeat(3, 1fr); }
+  .featured-grid { grid-template-columns: repeat(3, 1fr); }
+  .testimonials-grid { grid-template-columns: repeat(3, 1fr); }
+  .founder-content { grid-template-columns: 400px 1fr; }
+  .founder-img-wrap { max-width: 400px; }
+  .contact-inner { grid-template-columns: 1fr 1.2fr; align-items: start; }
+  .footer-inner { grid-template-columns: 1.5fr 1fr 1fr 1fr; }
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+  .gallery-item:nth-child(3n+1) { grid-column: span 1; aspect-ratio: 1; }
+  .gallery-item:nth-child(5n+1) { grid-column: span 2; aspect-ratio: 2/1; }
+  .insta-grid { grid-template-columns: repeat(6, 1fr); }
+  .equation-flow {
+    flex-direction: row;
+    gap: 0;
+    align-items: stretch;
+  }
+  .eq-step {
+    flex: 1;
+    flex-direction: column;
+    gap: 12px;
+    padding: 28px 24px;
+    border-bottom: none;
+    border-right: 1px solid rgba(255,255,255,0.07);
+    align-items: flex-start;
+  }
+  .eq-step:last-child { border-right: none; }
+  .eq-num { font-size: 3.5rem; }
+  .eq-arrow { display: none; }
+}
+
+/* ===== DESKTOP NAV ===== */
+.nav-desktop { display: none; }
+@media (min-width: 900px) {
+  .nav-desktop { display: flex; align-items: center; gap: 26px; }
+  .hamburger { display: none; }
+}
+@media (max-width: 899px) {
+  .hamburger { display: flex; }
+  .nav-cta .btn { display: none; }
+}
+
+/* ===== PAGE ROUTING ===== */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ===== WHATSAPP ICON ===== */
+.wa-icon { width: 20px; height: 20px; fill: currentColor; flex-shrink: 0; }
+
+/* ===== TRUST POINTS ===== */
+.trust-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 14px;
+  margin-top: 36px;
+}
+.trust-point {
+  background: var(--canvas-card);
+  border: 1px solid rgba(13,31,69,0.08);
+  border-radius: var(--r-md);
+  padding: 16px 18px;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.22s;
+}
+.trust-point:hover { transform: translateY(-2px); box-shadow: var(--shadow-card); border-color: rgba(27,63,126,0.18); }
+.trust-point-icon { font-size: 1.4rem; margin-bottom: 6px; }
+.trust-point-label { font-size: 0.78rem; font-weight: 500; color: var(--ink-soft); line-height: 1.4; }
+
+/* ===== VISUAL STORY CARDS ===== */
+.story-flow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 32px;
+}
+.story-card {
+  background: var(--canvas-card);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  border: 1px solid rgba(13,31,69,0.07);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+}
+.story-card-img {
+  height: 170px;
+  position: relative;
+}
+.story-card-body {
+  padding: 16px 18px;
+}
+.story-card-body h4 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.story-card-body p { font-size: 0.82rem; color: var(--ink-soft); }
+
+@media (min-width: 640px) {
+  .story-flow { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .story-flow { grid-template-columns: repeat(5, 1fr); }
+  .story-card-img { height: 140px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="#" class="nav-logo" onclick="showPage('home')" aria-label="Oriyon Art Creations home">
+    Oriyon <span>Art</span> Creations
+  </a>
+  <ul class="nav-links nav-desktop" role="list">
+    <li><a href="#" onclick="showPage('home')">Home</a></li>
+    <li><a href="#" onclick="showPage('birthday')">Birthday</a></li>
+    <li><a href="#" onclick="showPage('wedding')">Wedding</a></li>
+    <li><a href="#" onclick="showPage('corporate')">Corporate</a></li>
+    <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+    <li><a href="#" onclick="showPage('about')">About</a></li>
+    <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="https://wa.me/918120244035?text=Hi%20Oriyon%20Art%20Creations%2C%20I'm%20interested%20in%20a%20creative%20experience%20for%20my%20event." class="btn btn-wa" target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
+      <svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp Us
+    </a>
+    <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu" aria-expanded="false" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation menu">
+  <a href="#" onclick="showPage('home');closeMobileMenu()">Home</a>
+  <a href="#" onclick="showPage('birthday');closeMobileMenu()">Birthday Experiences</a>
+  <a href="#" onclick="showPage('wedding');closeMobileMenu()">Wedding Engagement</a>
+  <a href="#" onclick="showPage('corporate');closeMobileMenu()">Corporate Activities</a>
+  <a href="#" onclick="showPage('live-counters');closeMobileMenu()">Live Art Counters</a>
+  <a href="#" onclick="showPage('gifts');closeMobileMenu()">Personalized Gifts</a>
+  <a href="#" onclick="showPage('gallery');closeMobileMenu()">Gallery</a>
+  <a href="#" onclick="showPage('about');closeMobileMenu()">About Anushka</a>
+  <a href="#" onclick="showPage('contact');closeMobileMenu()">Contact</a>
+  <a href="https://wa.me/918120244035?text=Hi%20Oriyon%20Art%20Creations%2C%20I'm%20interested%20in%20a%20creative%20experience%20for%20my%20event." class="btn btn-wa" target="_blank" rel="noopener">
+    <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp Oriyon
+  </a>
+</div>
+
+<!-- ===== STICKY WHATSAPP ===== -->
+<a href="https://wa.me/918120244035?text=Hi%20Oriyon%20Art%20Creations%2C%20I'm%20interested%20in%20a%20creative%20experience%20for%20my%20event." class="sticky-wa" target="_blank" rel="noopener" id="sticky-wa" aria-label="Contact Oriyon Art Creations on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="sticky-wa-label">WhatsApp Us</span>
+</a>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)" role="dialog" aria-modal="true" aria-label="Image lightbox">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">✕</button>
+    <div class="lightbox-img" id="lightbox-img">
+      <div class="photo-placeholder" style="border:none;border-radius:0;">
+        <strong>Image Placeholder</strong>
+        <span id="lightbox-desc">Event photo</span>
+      </div>
+    </div>
+    <div class="lightbox-caption">
+      <h4 id="lightbox-title">Event Memory</h4>
+      <p id="lightbox-caption-text">Oriyon Art Creations</p>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ===== HOME PAGE ===== -->
+<!-- ================================================================ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-headline">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-blob hero-blob-3"></div>
+      <!-- Brush stroke SVG decorations -->
+      <svg class="hero-brush hero-brush-1" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M20 250 Q80 180 160 200 Q240 220 320 120 Q360 70 380 40" stroke="#1B3F7E" stroke-width="40" stroke-linecap="round" fill="none" opacity="0.5"/>
+      </svg>
+      <svg class="hero-brush hero-brush-2" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M20 250 Q100 200 200 220 Q300 240 380 160" stroke="#4E9EC7" stroke-width="32" stroke-linecap="round" fill="none" opacity="0.4"/>
+      </svg>
+    </div>
+
+    <div class="hero-content reveal">
+      <div class="hero-chips" role="list" aria-label="Services offered">
+        <span class="chip" role="listitem">🎂 Birthday Parties</span>
+        <span class="chip" role="listitem">💍 Wedding Engagement</span>
+        <span class="chip" role="listitem">🏢 Corporate Events</span>
+        <span class="chip" role="listitem">🎨 Live Art Counters</span>
+        <span class="chip" role="listitem">🎁 Personalized Keepsakes</span>
+        <span class="chip" role="listitem">📍 Indore</span>
+      </div>
+      <h1 class="display-xl hero-headline" id="hero-headline">
+        Where <em>Creativity</em><br>Meets Celebration
+      </h1>
+      <p class="hero-sub">Creative experiences for birthdays, weddings, corporate events, and every celebration in between.</p>
+      <p class="hero-emotional">Guests don't just attend — they create, personalize, and take home a memory.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/918120244035?text=Hi%20Oriyon%20Art%20Creations%2C%20I'm%20interested%20in%20a%20creative%20experience%20for%20my%20event.%0A%0AName%3A%0AEvent%20Type%3A%0AEvent%20Date%3A%0AAge%20Group%3A%0ANumber%20of%20Participants%3A%0AVenue%2FCity%3A%0AActivity%2FTheme%20Idea%3A%0APlease%20share%20suitable%20options%20and%20availability." class="btn btn-wa" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+        <button class="btn btn-outline" onclick="scrollToFinder()">Find Your Experience →</button>
+      </div>
+      <p class="hero-tagline">— You Say, We Create.</p>
+    </div>
+
+    <!-- Hero visual collage (desktop) — replace placeholders with real event photos -->
+    <div class="hero-collage" aria-hidden="true">
+      <div class="hero-collage-grid">
+        <div class="hero-cell hero-cell-main">
+          <div class="photo-placeholder" style="height:100%;border-radius:var(--r-md);border-style:dashed;">
+            <strong>Hero main visual</strong>
+            <span>Replace with birthday/wedding event collage or short video</span>
+          </div>
+          <div class="hero-cell-label">Birthday Activity · Live Counter · Keepsakes</div>
+        </div>
+        <div class="hero-cell hero-cell-sub">
+          <div class="photo-placeholder" style="height:100%;border-radius:var(--r-md);border-style:dashed;">
+            <strong>Wedding counter photo</strong>
+          </div>
+          <div class="hero-cell-label">Wedding Guest</div>
+        </div>
+        <div class="hero-cell hero-cell-sub">
+          <div class="photo-placeholder" style="height:100%;border-radius:var(--r-md);border-style:dashed;">
+            <strong>Keepsake closeup</strong>
+          </div>
+          <div class="hero-cell-label">Personalized Keepsake</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUEST ENGAGEMENT EQUATION -->
+  <section class="equation-section" aria-labelledby="eq-heading">
+    <div class="container">
+      <div style="max-width:700px;margin-bottom:56px;" class="reveal">
+        <p class="eyebrow" style="color:var(--sky-light);">Why guests remember Oriyon experiences</p>
+        <h2 class="equation-title" id="eq-heading">The Guest Engagement Equation</h2>
+        <p class="equation-sub">Every Oriyon experience follows a simple but powerful flow that transforms a celebration into a memory.</p>
+      </div>
+      <div class="equation-flow reveal">
+        <div class="eq-step">
+          <div class="eq-num">01</div>
+          <div>
+            <div class="eq-verb">Create</div>
+            <p class="eq-desc">Guests participate instead of only watching. Hands busy, minds engaged, hearts invested.</p>
+          </div>
+        </div>
+        <div class="eq-step">
+          <div class="eq-num">02</div>
+          <div>
+            <div class="eq-verb">Personalize</div>
+            <p class="eq-desc">Names, colors, themes, and designs make every keepsake uniquely theirs — not a generic gift.</p>
+          </div>
+        </div>
+        <div class="eq-step">
+          <div class="eq-num">03</div>
+          <div>
+            <div class="eq-verb">Photograph</div>
+            <p class="eq-desc">The setup becomes a visual moment guests want to capture. Your event becomes more shareable.</p>
+          </div>
+        </div>
+        <div class="eq-step">
+          <div class="eq-num">04</div>
+          <div>
+            <div class="eq-verb">Take Home</div>
+            <p class="eq-desc">Guests leave with a keepsake they made themselves — not just a memory, but a tangible one.</p>
+          </div>
+        </div>
+        <div class="eq-step">
+          <div class="eq-num">05</div>
+          <div>
+            <div class="eq-verb">Remember</div>
+            <p class="eq-desc">The event stays with them longer because they made something with their own hands. That's the Oriyon difference.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- EXPERIENCE FINDER -->
+  <section class="finder-section" id="finder" aria-labelledby="finder-heading">
+    <div class="container">
+      <div class="finder-header reveal">
+        <p class="eyebrow">Find the Right Experience</p>
+        <h2 class="display-md" id="finder-heading">What kind of event are you planning?</h2>
+        <p class="body-lg">Tell us your event type, and we'll show you the perfect creative experience.</p>
+      </div>
+      <div class="finder-tabs reveal" role="tablist" aria-label="Event type selector">
+        <button class="finder-tab active" onclick="switchFinder('birthday', this)" role="tab" aria-selected="true" aria-controls="finder-birthday">🎂 Birthday Party</button>
+        <button class="finder-tab" onclick="switchFinder('wedding', this)" role="tab" aria-selected="false" aria-controls="finder-wedding">💍 Wedding</button>
+        <button class="finder-tab" onclick="switchFinder('corp', this)" role="tab" aria-selected="false" aria-controls="finder-corp">🏢 Corporate Event</button>
+        <button class="finder-tab" onclick="switchFinder('community', this)" role="tab" aria-selected="false" aria-controls="finder-community">🌿 Community Event</button>
+      </div>
+
+      <div class="finder-panel active" id="finder-birthday" role="tabpanel">
+        <div class="finder-card reveal">
+          <h3>DIY Activity Stations</h3>
+          <div class="finder-activities">
+            <span class="activity-tag">Nameplate Making</span>
+            <span class="activity-tag">Cap Designing</span>
+            <span class="activity-tag">Wand Making</span>
+            <span class="activity-tag">Bracelet Bar</span>
+          </div>
+          <div class="finder-outcome">✨ Guests create personalized keepsakes and take home a memory from the party.</div>
+          <a href="#" onclick="showPage('birthday')" class="btn btn-ghost">Explore Birthday Experiences</a>
+        </div>
+        <div class="finder-card reveal reveal-delay-1">
+          <h3>Theme-Based Experiences</h3>
+          <div class="finder-activities">
+            <span class="activity-tag">Sunglasses Decoration</span>
+            <span class="activity-tag">Money Box Painting</span>
+            <span class="activity-tag">Photo Frame Decoration</span>
+            <span class="activity-tag">Bookmark Making</span>
+          </div>
+          <div class="finder-outcome">🎨 Activities matched to your birthday theme — princess, superhero, nature, or any concept.</div>
+          <a href="https://wa.me/918120244035?text=Hi%20Oriyon%21%20I%20want%20to%20plan%20a%20birthday%20party%20activity%20experience." class="btn btn-wa" target="_blank" rel="noopener">Plan a Birthday Experience</a>
+        </div>
+      </div>
+
+      <div class="finder-panel" id="finder-wedding" role="tabpanel">
+        <div class="finder-card reveal">
+          <h3>Guest Engagement Counters</h3>
+          <div class="finder-activities">
+            <span class="activity-tag">Tote Bag Block Printing</span>
+            <span class="activity-tag">Charm Bar</span>
+            <span class="activity-tag">Hat Customization</span>
+            <span class="activity-tag">EVA Counter</span>
+          </div>
+          <div class="finder-outcome">💍 Guests personalize their own keepsake at your wedding — making the day unforgettable for them too.</div>
+          <a href="#" onclick="showPage('wedding')" class="btn btn-ghost">Explore Wedding Experiences</a>
+        </div>
+        <div class="finder-card reveal reveal-delay-1">
+          <h3>Live Art Experiences</h3>
+          <div class="finder-activities">
+            <span class="activity-tag">Live Calligraphy</span>
+            <span class="activity-tag">Live Engraving</span>
+            <span class="activity-tag">Glass Cover Customization</span>
+            <span class="activity-tag">Hairbrush Customization</span>
+          </div>
+          <div class="finder-outcome">🎨 A live artist creates personalized keepsakes for your guests in real time at your wedding venue.</div>
+          <a href="https://wa.me/918120244035?text=Hi%20Oriyon%21%20I%20want%20a%20wedding%20guest%20engagement%20counter." class="btn btn-wa" target="_blank" rel="noopener">Plan a Wedding Counter</a>
+        </div>
+      </div>
+
+      <div class="finder-panel" id="finder-corp" role="tabpanel">
+        <div class="finder-card reveal">
+          <h3>Occasion-Based Activities</h3>
+          <div class="finder-activities">
+            <span class="activity-tag">Women's Day</span>
+            <span class="activity-tag">Earth Day</span>
+            <span class="activity-tag">Fun Friday</span>
+            <span class="activity-tag">Annual Meet</span>
+          </div>
+          <div class="finder-outcome">🏢 Creative activities that align with your company's occasions, values, and team culture.</div>
+          <a href="#" onclick="showPage('corporate')" class="btn btn-ghost">Explore Corporate Activities</a>
+        </div>
+        <div class="finder-card reveal reveal-delay-1">
+          <h3>Employee Engagement</h3>
+          <div class="finder-activities">
+            <span class="activity-tag">Desk-Based DIY Kits</span>
+            <span class="activity-tag">Conferences</span>
+            <span class="activity-tag">Exhibitions</span>
+            <span class="activity-tag">Live Personalized Takeaways</span>
+          </div>
+          <div class="finder-outcome">🎨 No prior art skills needed. Inclusive, creative, and refreshing for any team size.</div>
+          <a href="https://wa.me/918120244035?text=Hi%20Oriyon%21%20I%20want%20corporate%20engagement%20activities." class="btn btn-wa" target="_blank" rel="noopener">Plan a Corporate Session</a>
+        </div>
+      </div>
+
+      <div class="finder-panel" id="finder-community" role="tabpanel">
+        <div class="finder-card reveal">
+          <h3>Community Experiences</h3>
+          <div class="finder-activities">
+            <span class="activity-tag">Group Workshops</span>
+            <span class="activity-tag">Family Events</span>
+            <span class="activity-tag">Club Gatherings</span>
+            <span class="activity-tag">Society Celebrations</span>
+          </div>
+          <div class="finder-outcome">🌿 Creative experiences for clubs, cafés, RWAs, and community groups of all ages.</div>
+          <a href="https://wa.me/918120244035?text=Hi%20Oriyon%21%20I%20want%20a%20community%20art%20experience." class="btn btn-wa" target="_blank" rel="noopener">Plan a Community Experience</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE CATEGORIES -->
+  <section class="section" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">What We Create</p>
+        <h2 class="display-md" id="services-heading">Creative Experiences for Every Event</h2>
+        <div class="divider"></div>
+        <p class="body-lg" style="margin-top:14px;">From an intimate birthday party to a large wedding or corporate meet, we design an experience that fits your event perfectly.</p>
+      </div>
+      <div class="services-grid">
+
+        <article class="service-card reveal" onclick="showPage('birthday')" style="cursor:pointer;" tabindex="0" role="button" aria-label="Birthday Party Experiences">
+          <div class="service-card-img">
+            <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C12 2 8 6 8 9a4 4 0 008 0c0-3-4-7-4-7z"/><rect x="3" y="14" width="18" height="8" rx="2"/></svg>
+              <span>Birthday party photos</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-best-for">Best for: Parents, Mothers planning a birthday</p>
+            <h3>Birthday Party Experiences</h3>
+            <p>Theme-based DIY activities where children aged 3–6 and teenagers create personalized keepsakes. 45–60 minutes of meaningful engagement.</p>
+            <div class="service-card-actions">
+              <button class="btn btn-ghost" onclick="event.stopPropagation();showPage('birthday')">Explore</button>
+              <a href="https://wa.me/918120244035?text=Hi%21%20I%20want%20birthday%20party%20art%20activities." class="btn btn-wa" onclick="event.stopPropagation()" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card reveal reveal-delay-1" onclick="showPage('wedding')" style="cursor:pointer;" tabindex="0" role="button" aria-label="Wedding Guest Engagement">
+          <div class="service-card-img">
+            <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:var(--blush-pale);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21.7C12 21.7 3 14 3 8.5a4.5 4.5 0 019-0.5 4.5 4.5 0 019 .5C21 14 12 21.7 12 21.7z"/></svg>
+              <span>Wedding engagement photos</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-best-for">Best for: Couples, wedding families</p>
+            <h3>Wedding Guest Engagement</h3>
+            <p>Interactive keepsake stations where wedding guests personalize items and take home a beautiful memory from your special day.</p>
+            <div class="service-card-actions">
+              <button class="btn btn-ghost" onclick="event.stopPropagation();showPage('wedding')">Explore</button>
+              <a href="https://wa.me/918120244035?text=Hi%21%20I%20want%20a%20wedding%20guest%20engagement%20counter." class="btn btn-wa" onclick="event.stopPropagation()" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card reveal reveal-delay-2" onclick="showPage('corporate')" style="cursor:pointer;" tabindex="0" role="button" aria-label="Corporate Engagement Activities">
+          <div class="service-card-img">
+            <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:var(--sage-pale);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+              <span>Corporate event photos</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-best-for">Best for: HR teams, event managers</p>
+            <h3>Corporate Engagement Activities</h3>
+            <p>Creative activities for Women's Day, Earth Day, Fun Fridays, conferences, and team engagement sessions. No prior art skills needed.</p>
+            <div class="service-card-actions">
+              <button class="btn btn-ghost" onclick="event.stopPropagation();showPage('corporate')">Explore</button>
+              <a href="https://wa.me/918120244035?text=Hi%21%20I%20want%20corporate%20engagement%20activities." class="btn btn-wa" onclick="event.stopPropagation()" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card reveal" onclick="showPage('live-counters')" style="cursor:pointer;" tabindex="0" role="button" aria-label="Live Art Counters">
+          <div class="service-card-img">
+            <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:#E8EFF8;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+              <span>Live art counter photos</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-best-for">Best for: Weddings, exhibitions, premium events</p>
+            <h3>Live Art Counters</h3>
+            <p>Interactive stations where guests participate, personalize, and take home meaningful keepsakes. Makes any event feel alive and engaging.</p>
+            <div class="service-card-actions">
+              <button class="btn btn-ghost" onclick="event.stopPropagation();showPage('live-counters')">Explore</button>
+              <a href="https://wa.me/918120244035?text=Hi%21%20I%20want%20a%20live%20art%20counter%20for%20my%20event." class="btn btn-wa" onclick="event.stopPropagation()" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card reveal reveal-delay-1" onclick="showPage('gifts')" style="cursor:pointer;" tabindex="0" role="button" aria-label="Personalized Gifts and Hampers">
+          <div class="service-card-img">
+            <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:#EBF1FA;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 12v10H4V12"/><path d="M22 7H2v5h20V7z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg>
+              <span>Personalized gifts photos</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-best-for">Best for: Special occasions, events, corporate gifting</p>
+            <h3>Personalized Gifts & Hampers</h3>
+            <p>Customized gifting and creative hampers that feel thoughtful, handmade, and celebration-ready. Every gift tells a story.</p>
+            <div class="service-card-actions">
+              <button class="btn btn-ghost" onclick="event.stopPropagation();showPage('gifts')">Explore</button>
+              <a href="https://wa.me/918120244035?text=Hi%21%20I%20want%20personalized%20gifts%20and%20hampers." class="btn btn-wa" onclick="event.stopPropagation()" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card reveal reveal-delay-2" style="background:var(--gold-pale);border-color:rgba(27,63,126,0.2);">
+          <div class="service-card-img">
+            <div style="height:100%;background:rgba(27,63,126,0.08);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;padding:20px;text-align:center;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" width="36" height="36" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              <p style="font-size:0.85rem;color:var(--gold);font-weight:500;">Event Planners & Decorators</p>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <p class="service-best-for">For: Wedding planners, decorators, event companies</p>
+            <h3>Collaborate with Oriyon</h3>
+            <p>Looking for a reliable creative partner? Oriyon can work alongside event planners and decorators as a trusted execution partner.</p>
+            <div class="service-card-actions">
+              <a href="https://wa.me/918120244035?text=Hi%21%20I%27m%20an%20event%20planner%20interested%20in%20collaborating%20with%20Oriyon." class="btn btn-gold" target="_blank" rel="noopener">Let's Collaborate</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY ORIYON -->
+  <section class="why-section" aria-labelledby="why-heading">
+    <div class="container">
+      <div style="max-width:680px;margin-bottom:56px;" class="reveal">
+        <p class="eyebrow" style="color:var(--gold-light);">Why Oriyon</p>
+        <h2 class="display-md" style="color:var(--canvas);margin-bottom:16px;" id="why-heading">More than an activity. A creative moment.</h2>
+        <blockquote class="why-quote">
+          "We don't just set up an activity table. We shape creative moments around your event, your guests, and your theme."
+        </blockquote>
+      </div>
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <div>
+            <h4>Exceptional Guest Engagement</h4>
+            <p>Guests don't wait idly. They participate, create, and connect — making your event feel alive and memorable.</p>
+          </div>
+        </div>
+        <div class="why-item reveal reveal-delay-1">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div>
+            <h4>Theme Customization</h4>
+            <p>Every activity is adapted to your event theme, colors, and concept. No generic templates — everything is designed for your celebration.</p>
+          </div>
+        </div>
+        <div class="why-item reveal reveal-delay-2">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <div>
+            <h4>Professional Execution</h4>
+            <p>Anushka's team manages all setup, materials, execution, and cleanup. You enjoy your event. We handle everything else.</p>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          </div>
+          <div>
+            <h4>Meaningful Keepsakes</h4>
+            <p>Guests leave with something they made themselves. A bracelet, a painted frame, a personalized bag — a memory they can hold.</p>
+          </div>
+        </div>
+        <div class="why-item reveal reveal-delay-1">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div>
+            <h4>Age-Friendly Activities</h4>
+            <p>Experiences designed for children aged 3–6, teenagers, young adults, and professionals. Everyone can participate with ease and joy.</p>
+          </div>
+        </div>
+        <div class="why-item reveal reveal-delay-2">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+          </div>
+          <div>
+            <h4>25+ Art Forms</h4>
+            <p>From block printing and calligraphy to charm-making and live engraving — Oriyon brings creative variety and artistic depth to every event.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS & COLLABORATIONS -->
+  <section class="brands-section" aria-labelledby="brands-heading">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <p class="eyebrow">Trusted By</p>
+        <h2 class="display-md" id="brands-heading">Brands & Organizations We've Worked With</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="brands-grid reveal" style="margin-top:32px;">
+        <div class="brand-badge">Aditya Birla Capital</div>
+        <div class="brand-badge">Fossil</div>
+        <div class="brand-badge">Camirica</div>
+        <div class="brand-badge">Lions Club</div>
+        <div class="brand-badge">Leo Club</div>
+        <div class="brand-badge">Rotary Club</div>
+      </div>
+      <p class="body-sm" style="text-align:center;margin-top:20px;" aria-live="polite">Client logos will be displayed here with permission. Text badges used as placeholder.</p>
+    </div>
+  </section>
+
+  <!-- FEATURED EXPERIENCES -->
+  <section class="section" aria-labelledby="featured-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Real Events, Real Stories</p>
+        <h2 class="display-md" id="featured-heading">Featured Experiences</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="featured-grid">
+        <article class="featured-card reveal">
+          <div class="featured-card-img">
+            <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:var(--blush-pale);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+              <span>Replace with birthday party event photo</span>
+            </div>
+          </div>
+          <div class="featured-card-body">
+            <span class="featured-tag">Birthday Party</span>
+            <h3>Rainbow Bracelet Bar</h3>
+            <p>15 children, aged 4–7. Each created their own bracelet — choosing colors, beads, and charms. Every guest went home with something uniquely theirs.</p>
+          </div>
+        </article>
+        <article class="featured-card reveal reveal-delay-1">
+          <div class="featured-card-img">
+            <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:#DDE9F5;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+              <span>Replace with wedding counter event photo</span>
+            </div>
+          </div>
+          <div class="featured-card-body">
+            <span class="featured-tag">Wedding</span>
+            <h3>Tote Bag Block Printing Counter</h3>
+            <p>A live counter at a 200-guest wedding in Indore. Guests chose their design, stamped their bag, and carried home a handmade wedding memory.</p>
+          </div>
+        </article>
+        <article class="featured-card reveal reveal-delay-2">
+          <div class="featured-card-img">
+            <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:var(--sage-pale);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+              <span>Replace with corporate event photo</span>
+            </div>
+          </div>
+          <div class="featured-card-body">
+            <span class="featured-tag">Corporate</span>
+            <h3>Women's Day DIY Workshop</h3>
+            <p>A Fossil India collaboration — employees personalized their own tote bags. A refreshing creative break that built real team connection.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" style="background:var(--canvas-warm);" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <p class="eyebrow">What Clients Say</p>
+        <h2 class="display-md" id="testimonials-heading">Real Words from Real Celebrations</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="testimonials-grid" style="margin-top:36px;">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+          <p class="testimonial-text">"Real testimonial will be added here. This space is reserved for an authentic review from a parent who booked a birthday party experience."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">—</div>
+            <div>
+              <p class="testimonial-name">Client Name</p>
+              <p class="testimonial-role">Birthday Party, Indore</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+          <p class="testimonial-text">"Real testimonial will be added here. This space is reserved for an authentic review from a wedding family who had a guest engagement counter."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">—</div>
+            <div>
+              <p class="testimonial-name">Client Name</p>
+              <p class="testimonial-role">Wedding, Indore</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+          <p class="testimonial-text">"Real testimonial will be added here. This space is reserved for an authentic review from a corporate event manager who booked team engagement activities."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">—</div>
+            <div>
+              <p class="testimonial-name">Client Name</p>
+              <p class="testimonial-role">Corporate Event, Indore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEET ANUSHKA -->
+  <section class="section founder-section" aria-labelledby="founder-heading">
+    <div class="container">
+      <div class="founder-content">
+        <div class="founder-img-wrap reveal">
+          <div class="founder-img">
+            <div class="photo-placeholder" style="height:100%;border-radius:var(--radius-lg);border:none;background:var(--blush-pale);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="36" height="36" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.582-7 8-7s8 3 8 7"/></svg>
+              <span>Founder photo — Anushka Sendre</span>
+            </div>
+          </div>
+          <div class="founder-badge" aria-label="Founded in 2021">
+            <div class="founder-badge-year">2021</div>
+            <div class="founder-badge-label">Founded</div>
+          </div>
+        </div>
+        <div class="founder-text reveal reveal-delay-1">
+          <p class="eyebrow">The Creative Mind Behind Oriyon</p>
+          <h2 class="display-md" id="founder-heading">Meet Anushka Sendre</h2>
+          <div class="divider"></div>
+          <p class="body-lg" style="margin-top:18px;">What began on <strong>9 July 2021</strong> with handmade art, customized gifts, and a deep love for creativity across 25+ art forms has grown into a brand that shapes the emotional texture of celebrations.</p>
+          <p class="body-lg">Anushka believes that art becomes most meaningful when people can participate in it, personalize it, and carry it home as a memory. That belief is the soul of every Oriyon experience.</p>
+          <blockquote class="founder-tagline">You Say, We Create.</blockquote>
+          <div class="founder-values" aria-label="Brand values">
+            <span class="value-tag">Personal Connection</span>
+            <span class="value-tag">Customization</span>
+            <span class="value-tag">Creativity</span>
+            <span class="value-tag">Meaningful Experiences</span>
+            <span class="value-tag">Reliable Execution</span>
+            <span class="value-tag">Memory Creation</span>
+          </div>
+          <a href="https://wa.me/918120244035?text=Hi%20Anushka%21%20I%27d%20love%20to%20connect%20about%20an%20event%20experience." class="btn btn-gold" target="_blank" rel="noopener">
+            Connect with Anushka
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM SECTION -->
+  <section class="instagram-section" aria-labelledby="insta-heading">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <p class="eyebrow">Latest Creations</p>
+        <h2 class="display-md" id="insta-heading">See Oriyon on Instagram</h2>
+        <div class="divider"></div>
+        <p style="margin-top:12px;">Follow <strong>@oriyonartcreations</strong> for inspiration, behind-the-scenes moments, and real event highlights.</p>
+      </div>
+      <div class="insta-grid" style="margin-top:32px;" aria-label="Instagram gallery placeholder">
+        <!-- Placeholders for Instagram posts/reels -->
+        <div class="insta-item">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;font-size:0.7rem;">Instagram post 1</div>
+          <div class="insta-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </div>
+        </div>
+        <div class="insta-item">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;font-size:0.7rem;background:var(--blush-pale);">Instagram post 2</div>
+          <div class="insta-overlay" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></div>
+        </div>
+        <div class="insta-item">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;font-size:0.7rem;background:var(--sage-pale);">Instagram post 3</div>
+          <div class="insta-overlay" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></div>
+        </div>
+        <div class="insta-item">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;font-size:0.7rem;background:#E0EAF6;">Instagram post 4</div>
+          <div class="insta-overlay" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></div>
+        </div>
+        <div class="insta-item">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;font-size:0.7rem;background:var(--gold-pale);">Instagram post 5</div>
+          <div class="insta-overlay" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></div>
+        </div>
+        <div class="insta-item">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;font-size:0.7rem;background:#D6EEF7;">Instagram post 6</div>
+          <div class="insta-overlay" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:28px;">
+        <a href="https://instagram.com/oriyonartcreations" class="btn btn-outline" target="_blank" rel="noopener" aria-label="Follow Oriyon Art Creations on Instagram">Follow on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="contact-section" aria-labelledby="contact-cta-heading">
+    <div class="container">
+      <div style="text-align:center;max-width:600px;margin:0 auto;" class="reveal">
+        <p class="eyebrow" style="color:var(--gold-light);">Ready to Begin?</p>
+        <h2 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3rem);font-weight:400;color:var(--canvas);margin-bottom:16px;" id="contact-cta-heading">
+          Ready to add a creative touch to your celebration?
+        </h2>
+        <p style="color:rgba(244,246,250,0.80);margin-bottom:32px;">Tell us your event type, date, guest count, and idea. We'll help you choose the right creative experience — no fixed packages, everything customized just for you.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;">
+          <a href="https://wa.me/918120244035?text=Hi%20Oriyon%20Art%20Creations%2C%20I'm%20interested%20in%20a%20creative%20experience%20for%20my%20event.%0A%0AName%3A%0AEvent%20Type%3A%0AEvent%20Date%3A%0AAge%20Group%3A%0ANumber%20of%20Participants%3A%0AVenue%2FCity%3A%0AActivity%2FTheme%20Idea%3A%0APlease%20share%20suitable%20options%20and%20availability." class="btn btn-wa" target="_blank" rel="noopener">
+            <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Oriyon Art Creations
+          </a>
+          <button class="btn btn-outline" style="color:rgba(244,246,250,0.90);border-color:rgba(255,255,255,0.3);" onclick="showPage('contact')">Send Enquiry</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+
+<!-- ================================================================ -->
+<!-- ===== BIRTHDAY PAGE ===== -->
+<!-- ================================================================ -->
+<div class="page" id="page-birthday">
+  <div class="page-header">
+    <div class="container">
+      <p class="eyebrow">For Children & Teenagers</p>
+      <h1 class="display-lg">Birthday Party Experiences</h1>
+      <p class="body-lg">Creative, theme-based activities where every child creates something personal and takes home a memory from the party.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;gap:48px;">
+        <div>
+          <div class="section-header">
+            <p class="eyebrow">What to Expect</p>
+            <h2 class="display-md">Not just a party activity — a creative experience</h2>
+            <div class="divider"></div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-top:28px;">
+            <div class="finder-card">
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;margin-bottom:8px;">Age-Friendly Activities</h3>
+              <p style="font-size:0.875rem;color:var(--ink-soft);">Primary age group: <strong>3–6 years</strong>. Secondary: Teenagers. All activities are safe, engaging, and matched to the age group.</p>
+            </div>
+            <div class="finder-card">
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;margin-bottom:8px;">Duration</h3>
+              <p style="font-size:0.875rem;color:var(--ink-soft);">Approximately <strong>45–60 minutes</strong> of meaningful, guided creative time. Keeps guests engaged throughout the celebration.</p>
+            </div>
+            <div class="finder-card">
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;margin-bottom:8px;">Everything Managed</h3>
+              <p style="font-size:0.875rem;color:var(--ink-soft);">Oriyon handles all materials, setup, and execution. You enjoy your celebration. No mess, no stress.</p>
+            </div>
+            <div class="finder-card">
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;margin-bottom:8px;">Personalized Keepsakes</h3>
+              <p style="font-size:0.875rem;color:var(--ink-soft);">Every child creates something they can carry home — a bracelet, a nameplate, a painted frame — a memory they made themselves.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header">
+            <p class="eyebrow">Sample Activities</p>
+            <h2 class="display-md">Creative experiences for your birthday</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="finder-activities" style="margin-top:20px;">
+            <span class="activity-tag">Nameplate Making</span>
+            <span class="activity-tag">Photo Frame Decoration</span>
+            <span class="activity-tag">Bookmark Making</span>
+            <span class="activity-tag">Cap Designing</span>
+            <span class="activity-tag">Wand Making</span>
+            <span class="activity-tag">Bracelet Bar</span>
+            <span class="activity-tag">Sunglasses Decoration</span>
+            <span class="activity-tag">Money Box Painting</span>
+            <span class="activity-tag">Theme-Based Activities</span>
+            <span class="activity-tag">Personalized DIY Experiences</span>
+          </div>
+          <p class="body-sm" style="margin-top:16px;">Activities are customized based on your theme, age group, and guest count. WhatsApp us to discuss what works best for your birthday.</p>
+        </div>
+
+        <div>
+          <div class="section-header">
+            <p class="eyebrow">How It Works</p>
+            <h2 class="display-md">Simple from start to finish</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="process-steps" style="margin-top:24px;">
+            <div class="process-step"><div class="process-num" aria-hidden="true">1</div><div><h4>Share Your Event Details</h4><p>WhatsApp us with your child's age, party theme, date, venue, and approximate guest count.</p></div></div>
+            <div class="process-step"><div class="process-num" aria-hidden="true">2</div><div><h4>We Suggest the Right Activities</h4><p>Anushka reviews your event details and recommends activities that match your theme, age group, and budget.</p></div></div>
+            <div class="process-step"><div class="process-num" aria-hidden="true">3</div><div><h4>We Customize & Prepare</h4><p>All materials and props are customized to your party theme and prepared before the event day.</p></div></div>
+            <div class="process-step"><div class="process-num" aria-hidden="true">4</div><div><h4>We Set Up & Execute</h4><p>Oriyon's team arrives at your venue, sets up the activity station, manages the session, and ensures every child participates and enjoys.</p></div></div>
+            <div class="process-step"><div class="process-num" aria-hidden="true">5</div><div><h4>Guests Take Home a Memory</h4><p>Every child leaves with a personalized keepsake they created — a lasting memory from your celebration.</p></div></div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div>
+          <div class="section-header">
+            <p class="eyebrow">Common Questions</p>
+            <h2 class="display-md">Frequently Asked Questions</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="faq-list" style="margin-top:24px;">
+            <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">What age group are your activities suitable for?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" role="region">Our primary age group is 3–6 years. We also design experiences for teenagers. All activities are age-appropriate, safe, and guided by our trained team.</div></div>
+            <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">How long does a birthday activity take?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" role="region">Approximately 45–60 minutes depending on the activity, number of children, and customization level. We'll give you a more accurate time once we understand your event.</div></div>
+            <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">Can activities be customized to our party theme?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" role="region">Absolutely. Theme customization is our specialty. Whether it's princess, superhero, nature, cartoon characters, or any concept — we adapt the activity and props to match your theme.</div></div>
+            <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">Do you provide all materials?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" role="region">Yes. Oriyon provides all materials, props, and tools required for the activity. You don't need to arrange anything. We set up the station and manage everything on the day.</div></div>
+            <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">What is the pricing?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" role="region">We don't follow fixed public pricing because every event is different. Share your event type, date, location, participant count, and preferred activity with us on WhatsApp, and we'll suggest suitable options with customized pricing.</div></div>
+            <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">Will the activity be messy?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" role="region">Our activities are designed to be engaging without creating unnecessary mess. We use materials appropriate for the setting and age group, and our team manages the station throughout the event.</div></div>
+          </div>
+        </div>
+
+        <div class="cta-strip">
+          <h3>Ready to plan a birthday art experience?</h3>
+          <p>Share your event details and we'll suggest the perfect creative experience for your child's birthday.</p>
+          <a href="https://wa.me/918120244035?text=Hi%20Oriyon%21%20I%20want%20to%20plan%20a%20birthday%20party%20art%20experience.%0A%0AChild%27s%20Age%3A%0AParty%20Theme%3A%0AEvent%20Date%3A%0ANumber%20of%20Children%3A%0AVenue%2FCity%3A%0AActivity%20Idea%3A%0APlease%20share%20suitable%20options." class="btn btn-wa" target="_blank" rel="noopener">Plan a Birthday Experience</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-birthday -->
+
+
+<!-- ================================================================ -->
+<!-- ===== WEDDING PAGE ===== -->
+<!-- ================================================================ -->
+<div class="page" id="page-wedding">
+  <div class="page-header" style="background:var(--blush-pale);">
+    <div class="container">
+      <p class="eyebrow">For Couples & Wedding Families</p>
+      <h1 class="display-lg">Wedding Guest Engagement</h1>
+      <p class="body-lg">A wedding should not only be watched. It should be experienced. Oriyon creates beautiful guest engagement moments that become part of the wedding memory.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;gap:48px;">
+        <div>
+          <div class="section-header">
+            <p class="eyebrow">What We Create</p>
+            <h2 class="display-md">Interactive keepsake stations for your guests</h2>
+            <div class="divider"></div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-top:28px;">
+            <div class="finder-card" style="background:var(--blush-pale);border-color:rgba(27,63,126,0.15);">
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;margin-bottom:8px;">Live Art Counters</h3>
+              <p style="font-size:0.875rem;color:var(--ink-soft);">Interactive stations where guests participate, choose their design, create their item, and take home a personalized keepsake from your wedding.</p>
+            </div>
+            <div class="finder-card" style="background:var(--blush-pale);border-color:rgba(27,63,126,0.15);">
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;margin-bottom:8px;">Theme Customization</h3>
+              <p style="font-size:0.875rem;color:var(--ink-soft);">Every counter is designed to match your wedding colors, theme, and aesthetic — from traditional to contemporary.</p>
+            </div>
+            <div class="finder-card" style="background:var(--blush-pale);border-color:rgba(27,63,126,0.15);">
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;margin-bottom:8px;">Guest Engagement</h3>
+              <p style="font-size:0.875rem;color:var(--ink-soft);">Guests who participate remember the event more warmly. A creative counter adds a memorable, interactive dimension to your celebration.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header">
+            <p class="eyebrow">Activity Examples</p>
+            <h2 class="display-md">Creative experiences for weddings</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="finder-activities" style="margin-top:20px;">
+            <span class="activity-tag">Tote Bag Block Printing</span>
+            <span class="activity-tag">Charm Bar</span>
+            <span class="activity-tag">Hat Customization</span>
+            <span class="activity-tag">Live Calligraphy</span>
+            <span class="activity-tag">Live Engraving</span>
+            <span class="activity-tag">Hairbrush Customization</span>
+            <span class="activity-tag">EVA Counter</span>
+            <span class="activity-tag">Glass Cover Customization</span>
+          </div>
+          <p class="body-sm" style="margin-top:16px;">Activities and counters are customized based on your wedding scale, guest count, venue type, and theme. WhatsApp us to discuss the right experience for your wedding.</p>
+        </div>
+
+        <div class="cta-strip" style="background:var(--blush-pale);">
+          <h3>Create a wedding guest experience</h3>
+          <p>Share your wedding details and we'll suggest the perfect engagement counter for your guests.</p>
+          <a href="https://wa.me/918120244035?text=Hi%20Oriyon%21%20I%20want%20a%20wedding%20guest%20engagement%20counter.%0A%0AWedding%20Date%3A%0AGuest%20Count%3A%0AVenue%2FCity%3A%0AWedding%20Theme%3A%0AActivity%20Interest%3A%0APlease%20share%20suitable%20options." class="btn btn-wa" target="_blank" rel="noopener">Plan a Wedding Counter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-wedding -->
+
+
+<!-- ================================================================ -->
+<!-- ===== CORPORATE PAGE ===== -->
+<!-- ================================================================ -->
+<div class="page" id="page-corporate">
+  <div class="page-header" style="background:var(--sage-pale);">
+    <div class="container">
+      <p class="eyebrow">For HR Teams & Event Managers</p>
+      <h1 class="display-lg">Corporate Engagement Activities</h1>
+      <p class="body-lg">A refreshing break from regular corporate events. Creative activities that help teams participate, relax, connect, and carry home something personal.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;gap:48px;">
+        <div>
+          <div class="section-header">
+            <p class="eyebrow">Occasions We Cover</p>
+            <h2 class="display-md">Designed for every corporate moment</h2>
+            <div class="divider"></div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin-top:28px;">
+            <div class="finder-card" style="background:var(--sage-pale);border-color:rgba(122,158,138,0.2);">
+              <h3 style="font-family:var(--font-display);font-size:1.15rem;margin-bottom:6px;">Women's Day</h3>
+              <p style="font-size:0.85rem;color:var(--ink-soft);">Creative DIY activities that celebrate women in your workplace with a meaningful, personalized experience.</p>
+            </div>
+            <div class="finder-card" style="background:var(--sage-pale);border-color:rgba(122,158,138,0.2);">
+              <h3 style="font-family:var(--font-display);font-size:1.15rem;margin-bottom:6px;">Earth Day</h3>
+              <p style="font-size:0.85rem;color:var(--ink-soft);">Sustainable, eco-conscious art activities that connect employees with environmental themes.</p>
+            </div>
+            <div class="finder-card" style="background:var(--sage-pale);border-color:rgba(122,158,138,0.2);">
+              <h3 style="font-family:var(--font-display);font-size:1.15rem;margin-bottom:6px;">Fun Friday</h3>
+              <p style="font-size:0.85rem;color:var(--ink-soft);">Lighthearted creative sessions that bring teams together and make Friday feel special.</p>
+            </div>
+            <div class="finder-card" style="background:var(--sage-pale);border-color:rgba(122,158,138,0.2);">
+              <h3 style="font-family:var(--font-display);font-size:1.15rem;margin-bottom:6px;">Annual Meets</h3>
+              <p style="font-size:0.85rem;color:var(--ink-soft);">Memorable creative engagement sessions that make your company's annual gathering more interactive and meaningful.</p>
+            </div>
+            <div class="finder-card" style="background:var(--sage-pale);border-color:rgba(122,158,138,0.2);">
+              <h3 style="font-family:var(--font-display);font-size:1.15rem;margin-bottom:6px;">Conferences & Exhibitions</h3>
+              <p style="font-size:0.85rem;color:var(--ink-soft);">Live personalized takeaways and creative counters that make your brand stand out at conferences and expos.</p>
+            </div>
+            <div class="finder-card" style="background:var(--sage-pale);border-color:rgba(122,158,138,0.2);">
+              <h3 style="font-family:var(--font-display);font-size:1.15rem;margin-bottom:6px;">Desk-Based DIY Kits</h3>
+              <p style="font-size:0.85rem;color:var(--ink-soft);">Creative kits delivered to desks — allowing employees to create at their own pace during engagement days.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header">
+            <p class="eyebrow">Why It Works</p>
+            <h2 class="display-md">Creative experiences built for the workplace</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="why-grid" style="margin-top:24px;">
+            <div class="why-item" style="background:var(--canvas-card);padding:20px;border-radius:var(--radius-md);border:1px solid rgba(15,32,68,0.07);">
+              <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.5" width="20" height="20"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+              <div><h4 style="color:var(--ink);">No Prior Skills Needed</h4><p>Every activity is designed so anyone can participate and enjoy — regardless of artistic background.</p></div>
+            </div>
+            <div class="why-item" style="background:var(--canvas-card);padding:20px;border-radius:var(--radius-md);border:1px solid rgba(15,32,68,0.07);">
+              <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.5" width="20" height="20"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></div>
+              <div><h4 style="color:var(--ink);">Professional Execution</h4><p>Oriyon's team manages everything — setup, materials, guidance, and cleanup — so HR teams can focus on their event.</p></div>
+            </div>
+            <div class="why-item" style="background:var(--canvas-card);padding:20px;border-radius:var(--radius-md);border:1px solid rgba(15,32,68,0.07);">
+              <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.5" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 13h4"/></svg></div>
+              <div><h4 style="color:var(--ink);">Customized for Your Brand</h4><p>Activities can be themed to match your company's brand colors, values, or the occasion's theme.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-strip" style="background:var(--sage-pale);">
+          <h3>Plan a corporate creative session</h3>
+          <p>Tell us your team size, occasion, and format preference. We'll suggest the perfect creative engagement experience.</p>
+          <a href="https://wa.me/918120244035?text=Hi%20Oriyon%21%20I%20want%20corporate%20engagement%20activities.%0A%0AOccasion%3A%0ATeam%20Size%3A%0AEvent%20Date%3A%0AVenue%2FCity%3A%0AFormat%20Preference%3A%0APlease%20share%20suitable%20options." class="btn btn-wa" target="_blank" rel="noopener">Plan a Corporate Session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-corporate -->
+
+
+<!-- ================================================================ -->
+<!-- ===== LIVE COUNTERS PAGE ===== -->
+<!-- ================================================================ -->
+<div class="page" id="page-live-counters">
+  <div class="page-header" style="background:#DDE9F5;">
+    <div class="container">
+      <p class="eyebrow">For All Event Types</p>
+      <h1 class="display-lg">Live Art Counters</h1>
+      <p class="body-lg">Live counters make events feel alive because guests are not passive. They interact, create, personalize, and remember.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;gap:48px;">
+        <div>
+          <div class="section-header">
+            <p class="eyebrow">What Is a Live Counter?</p>
+            <h2 class="display-md">A station where your guests become the creators</h2>
+            <div class="divider"></div>
+          </div>
+          <p class="body-lg" style="margin-top:18px;">A live art counter is an interactive station set up at your event venue. Guests walk up, choose their design, create their own personalized item, and take it home as a keepsake. No waiting, no passive watching — pure participation.</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin-top:28px;">
+            <div class="finder-card"><h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:6px;">Weddings</h3><p style="font-size:0.85rem;color:var(--ink-soft);">Tote bag printing, charm bars, live calligraphy — guests engage and leave with something beautiful.</p></div>
+            <div class="finder-card"><h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:6px;">Exhibitions</h3><p style="font-size:0.85rem;color:var(--ink-soft);">Live counters at exhibitions create brand recall and make visitors linger, engage, and remember your brand.</p></div>
+            <div class="finder-card"><h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:6px;">Corporate Events</h3><p style="font-size:0.85rem;color:var(--ink-soft);">Live personalized takeaways for conferences, annual meets, and brand activations.</p></div>
+            <div class="finder-card"><h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:6px;">Premium Parties</h3><p style="font-size:0.85rem;color:var(--ink-soft);">Adds a luxurious, creative dimension to premium birthday parties, anniversaries, and milestone celebrations.</p></div>
+          </div>
+        </div>
+        <div class="cta-strip">
+          <h3>Book a live art counter</h3>
+          <p>Tell us your event type and guest count. We'll create the perfect live counter experience for your occasion.</p>
+          <a href="https://wa.me/918120244035?text=Hi%20Oriyon%21%20I%20want%20a%20live%20art%20counter%20for%20my%20event.%0A%0AEvent%20Type%3A%0AGuest%20Count%3A%0AEvent%20Date%3A%0AVenue%2FCity%3A%0AActivity%20Interest%3A%0APlease%20share%20suitable%20options." class="btn btn-wa" target="_blank" rel="noopener">Book a Live Art Counter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-live-counters -->
+
+
+<!-- ================================================================ -->
+<!-- ===== GIFTS PAGE ===== -->
+<!-- ================================================================ -->
+<div class="page" id="page-gifts">
+  <div class="page-header" style="background:#E0EDF8;">
+    <div class="container">
+      <p class="eyebrow">For Every Occasion</p>
+      <h1 class="display-lg">Personalized Gifts & Hampers</h1>
+      <p class="body-lg">Customized gifting and creative hampers that feel thoughtful, handmade, and celebration-ready. Every gift tells a story.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;gap:36px;">
+        <div>
+          <p class="body-lg">At Oriyon, gifts are not just products. They are creative, handmade expressions of care — personalized to the recipient, the occasion, and the relationship. Whether it's a corporate gifting order, a wedding favor, a birthday return gift, or a special occasion hamper, we create something that genuinely feels personal.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;">
+          <div class="finder-card"><h3 style="font-family:var(--font-display);font-size:1.15rem;margin-bottom:6px;">Corporate Gifting</h3><p style="font-size:0.85rem;color:var(--ink-soft);">Branded, personalized gifts for employees, clients, partners, and corporate occasions.</p></div>
+          <div class="finder-card"><h3 style="font-family:var(--font-display);font-size:1.15rem;margin-bottom:6px;">Wedding Favors</h3><p style="font-size:0.85rem;color:var(--ink-soft);">Handmade, customized return gifts that guests will actually remember and keep.</p></div>
+          <div class="finder-card"><h3 style="font-family:var(--font-display);font-size:1.15rem;margin-bottom:6px;">Birthday Return Gifts</h3><p style="font-size:0.85rem;color:var(--ink-soft);">Creative, personalized return gifts for birthday parties — more meaningful than generic party favors.</p></div>
+          <div class="finder-card"><h3 style="font-family:var(--font-display);font-size:1.15rem;margin-bottom:6px;">Special Occasion Hampers</h3><p style="font-size:0.85rem;color:var(--ink-soft);">Curated creative hampers for anniversaries, festivals, achievements, and personal celebrations.</p></div>
+        </div>
+        <div class="cta-strip" style="background:#E0EDF8;">
+          <h3>Ask for custom gifts & hampers</h3>
+          <p>Every gifting order is customized. Tell us the occasion, recipient, and quantity and we'll suggest the best options.</p>
+          <a href="https://wa.me/918120244035?text=Hi%20Oriyon%21%20I%20want%20personalized%20gifts%20or%20hampers.%0A%0AOccasion%3A%0ARecipient%3A%0AQuantity%3A%0ADelivery%20Date%3A%0ACustomization%20Idea%3A%0APlease%20share%20suitable%20options." class="btn btn-wa" target="_blank" rel="noopener">Ask for Custom Gifts</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-gifts -->
+
+
+<!-- ================================================================ -->
+<!-- ===== GALLERY PAGE ===== -->
+<!-- ================================================================ -->
+<div class="page" id="page-gallery">
+  <div class="page-header">
+    <div class="container">
+      <p class="eyebrow">Memory Wall</p>
+      <h1 class="display-lg">The Memory Wall</h1>
+      <p class="body-lg">Real events, real guests, real memories. A glimpse of the creative experiences we've designed across birthdays, weddings, corporate events, live counters, and personalized gifts.</p>
+    </div>
+  </div>
+  <section class="memory-wall-section">
+    <div class="container">
+      <div class="gallery-filters" role="tablist" aria-label="Gallery category filter">
+        <button class="gallery-filter active" onclick="filterGallery('all', this)" role="tab" aria-selected="true">All</button>
+        <button class="gallery-filter" onclick="filterGallery('birthday', this)" role="tab" aria-selected="false">Birthdays</button>
+        <button class="gallery-filter" onclick="filterGallery('wedding', this)" role="tab" aria-selected="false">Weddings</button>
+        <button class="gallery-filter" onclick="filterGallery('corporate', this)" role="tab" aria-selected="false">Corporate</button>
+        <button class="gallery-filter" onclick="filterGallery('community', this)" role="tab" aria-selected="false">Community</button>
+        <button class="gallery-filter" onclick="filterGallery('live', this)" role="tab" aria-selected="false">Live Counters</button>
+        <button class="gallery-filter" onclick="filterGallery('gifts', this)" role="tab" aria-selected="false">Gifts & Hampers</button>
+      </div>
+      <div class="gallery-grid" id="gallery-grid" role="list">
+        <div class="gallery-item" data-cat="birthday" role="listitem" onclick="openLightbox('Tiny hands, big imagination.','Replace with birthday bracelet bar photo','Birthday Party · Bracelet Bar')">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:var(--blush-pale);">
+            <strong>Birthday Party Photo</strong>
+            <span style="font-size:0.7rem;">Replace with real event image — bracelet bar activity</span>
+          </div>
+          <span class="gallery-event-tag">Birthday</span>
+          <div class="gallery-caption">Tiny hands, big imagination.</div>
+        </div>
+        <div class="gallery-item" data-cat="wedding" role="listitem" onclick="openLightbox('A wedding keepsake guests could carry home.','Replace with wedding charm bar photo','Wedding · Charm Bar Counter')">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:#E0EAF6;">
+            <strong>Wedding Counter Photo</strong>
+            <span style="font-size:0.7rem;">Replace with real event image — charm bar</span>
+          </div>
+          <span class="gallery-event-tag">Wedding</span>
+          <div class="gallery-caption">A wedding keepsake guests could carry home.</div>
+        </div>
+        <div class="gallery-item" data-cat="corporate" role="listitem" onclick="openLightbox('A creative pause in the middle of a corporate day.','Replace with corporate DIY session photo','Corporate · Women\'s Day Workshop')">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:var(--sky-pale);">
+            <strong>Corporate Event Photo</strong>
+            <span style="font-size:0.7rem;">Replace with real event image — Women's Day</span>
+          </div>
+          <span class="gallery-event-tag">Corporate</span>
+          <div class="gallery-caption">A creative pause in the middle of a corporate day.</div>
+        </div>
+        <div class="gallery-item" data-cat="live" role="listitem" onclick="openLightbox('Not just a counter — a memory station.','Replace with live calligraphy counter photo','Live Calligraphy Counter')">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:#E8EFF8;">
+            <strong>Live Counter Photo</strong>
+            <span style="font-size:0.7rem;">Replace with real event image — live calligraphy</span>
+          </div>
+          <span class="gallery-event-tag">Live Counter</span>
+          <div class="gallery-caption">Not just a counter — a memory station.</div>
+        </div>
+        <div class="gallery-item" data-cat="birthday" role="listitem" onclick="openLightbox('Every child left with something uniquely theirs.','Replace with cap designing activity photo','Birthday Party · Cap Designing')">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:var(--navy-pale);">
+            <strong>Birthday Activity Photo</strong>
+            <span style="font-size:0.7rem;">Replace with real event image — cap designing</span>
+          </div>
+          <span class="gallery-event-tag">Birthday</span>
+          <div class="gallery-caption">Every child left with something uniquely theirs.</div>
+        </div>
+        <div class="gallery-item" data-cat="gifts" role="listitem" onclick="openLightbox('Personalized, made live, remembered later.','Replace with custom hampers photo','Personalized Gifts & Hampers')">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:#EBF1FA;">
+            <strong>Gifting & Hampers Photo</strong>
+            <span style="font-size:0.7rem;">Replace with real product/hamper image</span>
+          </div>
+          <span class="gallery-event-tag">Gifts</span>
+          <div class="gallery-caption">Personalized, made live, remembered later.</div>
+        </div>
+        <div class="gallery-item" data-cat="wedding" role="listitem" onclick="openLightbox('The setup itself became a moment to photograph.','Replace with tote bag printing photo','Wedding · Tote Bag Block Printing')">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:var(--blush-pale);">
+            <strong>Wedding Counter Photo</strong>
+            <span style="font-size:0.7rem;">Replace with real event image — tote bag printing</span>
+          </div>
+          <span class="gallery-event-tag">Wedding</span>
+          <div class="gallery-caption">The setup itself became a moment to photograph.</div>
+        </div>
+        <div class="gallery-item" data-cat="community" role="listitem" onclick="openLightbox('Creative experiences for every generation.','Replace with community event photo','Community Event')">
+          <div class="photo-placeholder" style="height:100%;border-radius:0;border:none;background:var(--sky-pale);">
+            <strong>Community Event Photo</strong>
+            <span style="font-size:0.7rem;">Replace with real event image — community gathering</span>
+          </div>
+          <span class="gallery-event-tag">Community</span>
+          <div class="gallery-caption">Creative experiences for every generation.</div>
+        </div>
+      </div>
+      <p class="body-sm" style="margin-top:28px;text-align:center;">Real event photographs will be displayed here. Click any item to view details. Placeholder layout shown above.</p>
+    </div>
+  </section>
+</div><!-- /page-gallery -->
+<div class="page" id="page-about">
+  <div class="page-header" style="background:var(--canvas-warm);">
+    <div class="container">
+      <p class="eyebrow">Our Story</p>
+      <h1 class="display-lg">About Oriyon Art Creations</h1>
+      <p class="body-lg">A creative experience brand born from a love of art, personal connection, and the belief that celebrations become more meaningful when people create something together.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;gap:56px;">
+        <div class="founder-content">
+          <div class="founder-img-wrap">
+            <div class="founder-img">
+              <div class="photo-placeholder" style="height:100%;border-radius:var(--r-lg);border:none;background:var(--navy-pale);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.582-7 8-7s8 3 8 7"/></svg>
+                <strong>Founder Photo</strong>
+                <span>Replace with Anushka Sendre's portrait photo</span>
+              </div>
+            </div>
+            <div class="founder-badge" aria-label="Founded 9 July 2021">
+              <div class="founder-badge-year">2021</div>
+              <div class="founder-badge-label">Est. 9 July</div>
+            </div>
+          </div>
+          <div class="founder-text">
+            <p class="eyebrow">The Founder</p>
+            <h2 class="display-md">Anushka Sendre</h2>
+            <div class="divider"></div>
+            <p class="body-lg" style="margin-top:18px;">Oriyon Art Creations was founded by <strong>Anushka Sendre</strong> on <strong>9 July 2021</strong> in Indore, MP.</p>
+            <p style="font-size:0.95rem;color:var(--ink-soft);line-height:1.78;margin-bottom:16px;">What began as customized handmade art products, personalized gifting solutions, and creative artworks across 25+ art forms has evolved into a full creative experience brand — bringing interactive art moments into birthdays, weddings, corporate events, and community celebrations.</p>
+            <p style="font-size:0.95rem;color:var(--ink-soft);line-height:1.78;margin-bottom:24px;">Anushka believes art becomes most meaningful when people can participate in it, personalize it, and carry it home as a memory. That belief shapes every experience Oriyon creates.</p>
+            <blockquote class="founder-tagline">"Art is most meaningful when you make it yourself."</blockquote>
+
+            <!-- Brand Timeline -->
+            <div class="founder-timeline">
+              <div class="timeline-event">
+                <div class="timeline-year">2021 · Est. 9 July</div>
+                <div class="timeline-label">Oriyon Art Creations founded — handmade products, personalized gifting, creative artworks</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-year">25+ Art Forms</div>
+                <div class="timeline-label">Block printing, calligraphy, charm-making, engraving, painting, and more</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-year">Events & Workshops</div>
+                <div class="timeline-label">Birthday parties, wedding engagement counters, corporate sessions, community gatherings</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-year">Brands Collaborated</div>
+                <div class="timeline-label">Aditya Birla Capital, Fossil, Camirica, Lions Club, Leo Club, Rotary Club</div>
+              </div>
+            </div>
+
+            <div class="founder-values">
+              <span class="value-tag">Personal Connection</span>
+              <span class="value-tag">Theme Customization</span>
+              <span class="value-tag">Guest Interaction</span>
+              <span class="value-tag">Memory Creation</span>
+              <span class="value-tag">25+ Art Forms</span>
+              <span class="value-tag">Reliable Execution</span>
+            </div>
+            <a href="https://wa.me/918120244035?text=Hi%20Anushka%21%20I%27d%20love%20to%20discuss%20a%20creative%20experience%20for%20my%20event." class="btn btn-gold" target="_blank" rel="noopener">Connect with Anushka</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header centered">
+            <p class="eyebrow">What We Believe</p>
+            <h2 class="display-md">Every event deserves a creative moment</h2>
+            <div class="divider"></div>
+          </div>
+          <div style="max-width:660px;margin:24px auto 0;text-align:center;">
+            <p class="body-lg">Oriyon is not simply "conducting activities." It is designing emotional, personalized, creative moments inside celebrations — where guests participate, create, and walk away with something they made themselves.</p>
+          </div>
+        </div>
+
+        <div class="cta-strip">
+          <h3>Ready to create something beautiful together?</h3>
+          <p>Tell us about your event and we'll help you design the right creative experience for your guests.</p>
+          <a href="https://wa.me/918120244035?text=Hi%20Oriyon%21%20I%27d%20love%20to%20discuss%20a%20creative%20experience%20for%20my%20event." class="btn btn-wa" target="_blank" rel="noopener">Connect on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-about -->
+<div class="page" id="page-contact">
+  <div class="contact-section" style="min-height:100vh;padding-top:100px;">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-text">
+          <p class="eyebrow" style="color:var(--gold-light);">Get in Touch</p>
+          <h2>Ready to add a creative touch to your celebration?</h2>
+          <p>Share your event type, date, guest count, and idea. We'll help you choose the right creative experience — no fixed packages, everything customized just for you.</p>
+          <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
+            <a href="https://wa.me/918120244035?text=Hi%20Oriyon%20Art%20Creations%2C%20I'm%20interested%20in%20a%20creative%20experience%20for%20my%20event." class="btn btn-wa" style="width:fit-content;" target="_blank" rel="noopener">
+              <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp: +91 81202 44035
+            </a>
+            <a href="https://instagram.com/oriyonartcreations" class="btn btn-outline" style="width:fit-content;color:rgba(244,246,250,0.90);border-color:rgba(255,255,255,0.3);" target="_blank" rel="noopener">Instagram: @oriyonartcreations</a>
+          </div>
+          <p style="font-size:0.85rem;color:rgba(244,246,250,0.65);">📍 Based in Indore, Madhya Pradesh<br>Available for events across Indore and beyond.</p>
+          <p style="font-size:0.82rem;color:rgba(244,246,250,0.55);margin-top:12px;">Every experience is customized, so pricing is shared after understanding your event details.</p>
+        </div>
+
+        <div class="contact-form-card">
+          <h3 style="font-family:var(--font-display);font-size:1.5rem;color:var(--canvas);margin-bottom:6px;">Send an Enquiry</h3>
+          <p style="font-size:0.85rem;color:rgba(244,246,250,0.70);margin-bottom:24px;">Fill in your event details and we'll get back to you on WhatsApp.</p>
+          <form class="form-grid" onsubmit="submitEnquiry(event)" novalidate aria-label="Event enquiry form">
+            <div class="form-group">
+              <label for="contact-name">Your Name *</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Priya Sharma" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="contact-phone">Phone / WhatsApp *</label>
+              <input type="tel" id="contact-phone" class="form-control" placeholder="+91 9876543210" required autocomplete="tel">
+            </div>
+            <div class="form-group" style="grid-column:1/-1;">
+              <label for="contact-email">Email (Optional)</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="priya@email.com" autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="contact-event-type">Event Type *</label>
+              <select id="contact-event-type" class="form-control" required>
+                <option value="" disabled selected>Select your event</option>
+                <option>Birthday Party</option>
+                <option>Wedding</option>
+                <option>Corporate Event</option>
+                <option>Community Event</option>
+                <option>Exhibition</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-date">Event Date</label>
+              <input type="date" id="contact-date" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="contact-age">Age Group</label>
+              <select id="contact-age" class="form-control">
+                <option value="" disabled selected>Select age group</option>
+                <option>Children (3–6 years)</option>
+                <option>Teenagers</option>
+                <option>Young Adults</option>
+                <option>Adults / Mixed</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-count">Approximate Participants</label>
+              <input type="number" id="contact-count" class="form-control" placeholder="e.g. 30" min="1">
+            </div>
+            <div class="form-group" style="grid-column:1/-1;">
+              <label for="contact-city">Venue / City</label>
+              <input type="text" id="contact-city" class="form-control" placeholder="Indore, MP" autocomplete="off">
+            </div>
+            <div class="form-group" style="grid-column:1/-1;">
+              <label for="contact-message">Activity / Theme Idea or Message</label>
+              <textarea id="contact-message" class="form-control" placeholder="Tell us about your event theme, activity preferences, or any specific ideas you have in mind..."></textarea>
+            </div>
+            <div style="grid-column:1/-1;">
+              <button type="submit" class="btn btn-wa" style="width:100%;justify-content:center;">
+                <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Send via WhatsApp
+              </button>
+              <p style="font-size:0.78rem;color:rgba(244,246,250,0.55);text-align:center;margin-top:10px;">This will open WhatsApp with your details pre-filled.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /page-contact -->
+
+<!-- ===== FOOTER ===== -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" onclick="showPage('home')">Oriyon <span style="color:var(--gold);">Art</span> Creations</a>
+      <p>Creative experiences for birthdays, weddings, corporate events, and every celebration in between. Founded by Anushka Sendre · Indore, MP · Est. 9 July 2021.</p>
+    </div>
+    <div class="footer-links">
+      <h5>Experiences</h5>
+      <ul>
+        <li><a href="#" onclick="showPage('birthday')">Birthday Parties</a></li>
+        <li><a href="#" onclick="showPage('wedding')">Wedding Engagement</a></li>
+        <li><a href="#" onclick="showPage('corporate')">Corporate Activities</a></li>
+        <li><a href="#" onclick="showPage('live-counters')">Live Art Counters</a></li>
+        <li><a href="#" onclick="showPage('gifts')">Personalized Gifts</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#" onclick="showPage('about')">About Anushka</a></li>
+        <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+        <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="https://wa.me/918120244035" target="_blank" rel="noopener">WhatsApp Us</a></li>
+        <li><a href="https://instagram.com/oriyonartcreations" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" onclick="showPage('contact')">Send Enquiry</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="max-width:1180px;margin:32px auto 0;" class="footer-bottom">
+    <span>© 2024 Oriyon Art Creations · Anushka Sendre · Indore, MP</span>
+    <span>You Say, We Create.</span>
+  </div>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+  // Page routing
+  function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    const target = document.getElementById('page-' + pageId);
+    if (target) {
+      target.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 40) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  }, { passive: true });
+
+  // Mobile menu toggle
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const hamburger = document.getElementById('hamburger');
+    const isOpen = menu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen.toString());
+  }
+  function closeMobileMenu() {
+    document.getElementById('mobile-menu').classList.remove('open');
+    document.getElementById('hamburger').setAttribute('aria-expanded', 'false');
+  }
+
+  // Experience finder tab switching
+  function switchFinder(id, btn) {
+    document.querySelectorAll('.finder-tab').forEach(t => {
+      t.classList.remove('active');
+      t.setAttribute('aria-selected', 'false');
+    });
+    document.querySelectorAll('.finder-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+    const panel = document.getElementById('finder-' + id);
+    if (panel) panel.classList.add('active');
+  }
+
+  // Gallery filter
+  function filterGallery(cat, btn) {
+    document.querySelectorAll('.gallery-filter').forEach(f => {
+      f.classList.remove('active');
+      f.setAttribute('aria-selected', 'false');
+    });
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      if (cat === 'all' || item.dataset.cat === cat) {
+        item.style.display = '';
+        item.removeAttribute('aria-hidden');
+      } else {
+        item.style.display = 'none';
+        item.setAttribute('aria-hidden', 'true');
+      }
+    });
+  }
+
+  // FAQ accordion
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    // Close all others
+    document.querySelectorAll('.faq-item.open').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  // Scroll to finder
+  function scrollToFinder() {
+    const finder = document.getElementById('finder');
+    if (finder) finder.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Enquiry form → WhatsApp
+  function submitEnquiry(e) {
+    e.preventDefault();
+    const name = document.getElementById('contact-name').value;
+    const phone = document.getElementById('contact-phone').value;
+    const email = document.getElementById('contact-email').value;
+    const eventType = document.getElementById('contact-event-type').value;
+    const date = document.getElementById('contact-date').value;
+    const age = document.getElementById('contact-age').value;
+    const count = document.getElementById('contact-count').value;
+    const city = document.getElementById('contact-city').value;
+    const message = document.getElementById('contact-message').value;
+
+    if (!name || !phone || !eventType) {
+      alert('Please fill in your name, phone number, and event type.');
+      return;
+    }
+
+    const msg = `Hi Oriyon Art Creations, I'm interested in a creative experience for my event.
+
+Name: ${name}
+Phone: ${phone}${email ? '\nEmail: ' + email : ''}
+Event Type: ${eventType}${date ? '\nEvent Date: ' + date : ''}${age ? '\nAge Group: ' + age : ''}${count ? '\nNumber of Participants: ' + count : ''}${city ? '\nVenue/City: ' + city : ''}${message ? '\nMessage: ' + message : ''}
+
+Please share suitable options and availability.`;
+
+    const url = 'https://wa.me/918120244035?text=' + encodeURIComponent(msg);
+    window.open(url, '_blank', 'noopener');
+  }
+
+  // Reveal on scroll (IntersectionObserver)
+  if ('IntersectionObserver' in window) {
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+  }
+
+  // Keyboard accessibility for service cards
+  document.querySelectorAll('[role="button"]').forEach(el => {
+    el.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        el.click();
+      }
+    });
+  });
+
+  // Lightbox
+  function openLightbox(caption, desc, title) {
+    const lb = document.getElementById('lightbox');
+    document.getElementById('lightbox-title').textContent = title || 'Event Memory';
+    document.getElementById('lightbox-caption-text').textContent = caption || 'Oriyon Art Creations';
+    document.getElementById('lightbox-desc').textContent = desc || 'Event photo';
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox(e) {
+    if (!e || e.target === document.getElementById('lightbox') || e.currentTarget.classList.contains('lightbox-close')) {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  // Active nav page tracking
+  const originalShowPage = window.showPage;
+  window.showPage = function(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    const target = document.getElementById('page-' + pageId);
+    if (target) {
+      target.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Re-trigger reveal animations for newly active page
+      setTimeout(() => {
+        if ('IntersectionObserver' in window) {
+          target.querySelectorAll('.reveal:not(.visible)').forEach(el => {
+            const obs = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+                  obs.unobserve(entry.target);
+                }
+              });
+            }, { threshold: 0.1 });
+            obs.observe(el);
+          });
+        } else {
+          target.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+        }
+      }, 100);
+    }
+  };
+</script>
+</body>
+</html>
